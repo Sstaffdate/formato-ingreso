@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>INGRESO ESTUDIANTES</title>
+</head >
+<body style=" color: white; background-color: #3a3a3a;">
+    <div class=" container mt-5">
+        <div class="text-center">
+            <h1 class="display-5 mb-5"> <strong>Formato De Ingreso-Estudiantes </strong></h1>
+        </div>
+        <div class="main row justify-content-center">
+            <form action="" id="student-from" class="row justify-content-center mb-4" autocomplete="off">
+            <div class="col-10 mb-3">
+                <label for="firstName">NOMBRE</label>
+                <input class="form-control" id="firstName" type="text" placeholder="Ingresar Nombre">
+            </div>
+            <div class="col-10 mb-3">
+                <label for="lastName">APELLIDO</label>
+                <input class="form-control" id="lastName" type="text" placeholder="Ingresar apellido">
+            </div>
+            <div class="col-10 mb-3">
+                <label for="rollNo">NUMERO DE ROLL</label> 
+                <input class="form-control" id="rollNo" type="text" placeholder="Ingresa rol">
+            </div>
+            <div class="col-10">
+                <input class="btn btn-success add-btn" type="submit" value="Aceptar">
+                </form> 
+    <div class="col-12 mt-5">
+        <table  class=" table table-striped table-dark">
+        <thead>
+            <tr>
+                <th> Nombre</th>
+                <th>Apellido</th>
+                <th>N. Roll</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="student-list">
+            <tr>
+
+                <td>Jair</td>
+            <td>Yepez</td>
+            <td>40</td>
+             <td>
+            <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+            <a href="#" class="btn btn-danger btn-sm delete"  >delete</a>
+        </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
